@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="conv.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Simple Unit Converter</h2>
+        <label for="unitType">Choose Unit:</label>
+        <select id="unitType" onchange="updatePlaceholder()">
+            <option value="meter-kilometer">Meters ↔ Kilometers</option>
+            <option value="inch-centimeter">Inches ↔ Centimeters</option>
+        </select>
+    
+        <label for="inputValue">Enter Value:</label>
+        <input type="number" id="inputValue" placeholder="Enter a value" oninput="convert()">
+    
+        <p>Converted Value: <span id="result">0</span></p>
+    </div>
+    <script src="conv.js"></script>
+</body>
+</html>
